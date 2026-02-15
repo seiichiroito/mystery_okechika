@@ -139,5 +139,38 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 
 
+<a href="./images/地しんの　おしらせ.png" target="_blank" id="fixed-image-link">
+  元画像を表示
+</a>
 
+<style>
+  #fixed-image-link {
+    /* 配置設定 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+
+    /* 見た目の装飾（サイトのデザインに合わせた緑色） */
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00d084;
+    color: #ffffff;
+    text-decoration: none; /* 下線を消す */
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    /* ホバー時の動き */
+    transition: all 0.3s ease;
+  }
+
+  /* マウスを乗せた時の演出 */
+  #fixed-image-link:hover {
+    background-color: #00b371;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+</style>
 </body></html>
